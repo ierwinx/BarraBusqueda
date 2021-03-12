@@ -24,6 +24,7 @@ class ViewController: UIViewController {
     private func creaBarra() {
         let barra = UISearchController(searchResultsController: nil)
         barra.searchResultsUpdater = self
+        barra.searchBar.placeholder = "Buscar..."
         self.navigationItem.searchController = barra
     }
     
